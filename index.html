@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
     html, body {
       margin: 0;
@@ -87,6 +89,8 @@
     div.bagian-email {
       height: 100vh;
       background-color: rgb(110, 110, 110);
+      background-color: rgb(0, 0, 0);
+      color: white;
     }
 
     /* Opsional: hilangkan scrollbar tapi tetap bisa scroll */
@@ -116,43 +120,14 @@
     }
 
     .email-area{
-      display: flex;
-      flex-direction: column;
-      width: 400px;
+      padding-bottom: 20px;
     }
 
-    .email-area-item{
-      margin-top: 15px;
-      font-family: "Roboto", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 300;
-      font-style: normal;
-      border: none;
-    }
-
-    .email-area form {
-      display: flex;
-      flex-direction: column;
-    }
-
-
-    .email-submit{
-      width: 100px;
-    }
-
-    .name-input{
-      padding: 20px;
-      border-radius: 25px;
-    }
-
-    .email-input{
-      padding: 20px;
-      border-radius: 25px;
-    }
-    .email-message{
-      padding: 20px;
-      border-radius: 25px;
-      height: 200px;
+    .form-email{
+      background-color: white;
+      font-weight: 500;
+      color: black;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -218,31 +193,79 @@
         </p>
       <div class="flex-button-link">
         <button class="button-link">Tanam Saham</button>
-        <button class="button-link">Penerimaan Modal</button>
+        <button class="button-link">Ajukan Permintaan Modal</button>
       </div>
       </div>
     </div>
     <div class="bagian-email">
-      <div class="container-margin">
+      <div class="container-margin email-area">
         <h1>⏺ Email</h1>
+        <p style="margin-bottom: 30px;">
+          penjelasan super duper panjang lebar 
+          gabungan kata kalimat dan masih banyak 
+          lagi untuk menciptakan sebuah deskripsi
+        </p>
+        <a
+          class="button-link form-email"
+          href="javascript:void(
+            window.open(
+              'https://form.jotform.com/251512918647058',
+              'blank',
+              'scrollbars=yes,
+              toolbar=no,
+              width=700,
+              height=500'
+            )
+          )
+        ">
+          Kirim Email
+        </a> 
+        <h1 style="margin-top: 40px;">⏺ Whatsapp</h1>
         <p>
           penjelasan super duper panjang lebar 
           gabungan kata kalimat dan masih banyak 
           lagi untuk menciptakan sebuah deskripsi
         </p>
-        <div class="flex-button-link email-area">
-          <form
-            action="https://formspree.io/f/mrbkzvnj"
-            method="POST"
-          >
-            <input type="text" name="name" class="name-input email-area-item" placeholder="Nama" required>
-            <input type="email" name="email" class="email-input email-area-item" placeholder="Email" required>
-            <textarea name="message" class="email-message email-area-item" placeholder="Pesan untuk kami" required></textarea>
-            <button type="submit" class="button-link email-submit email-area-item">Kirim</button>
-          </form>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6281234567890" target="_blank">
+          <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px;">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </button>
+        </a>
+
+        <h1 style="margin-top: 40px;">⏺ Media Sosial</h1>
+        <p>
+          penjelasan super duper panjang lebar 
+          gabungan kata kalimat dan masih banyak 
+          lagi untuk menciptakan sebuah deskripsi
+        </p>
+        
+        <div style="display: flex; gap: 10px;">
+          <!-- Facebook -->
+          <a href="https://facebook.com/YourPageUsername" target="_blank">
+            <button style="background-color:#1877F2; color:white; padding:10px 20px; border:none; border-radius:5px;">
+              <i class="fab fa-facebook-f"></i> Facebook
+            </button>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/YourProfileUsername" target="_blank">
+            <button style="background-color:#0A66C2; color:white; padding:10px 20px; border:none; border-radius:5px;">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </button>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com/YourInstagramUsername" target="_blank">
+            <button style="background-color:#E4405F; color:white; padding:10px 20px; border:none; border-radius:5px;">
+              <i class="fab fa-instagram"></i> Instagram
+            </button>
+          </a>
+
         </div>
       </div>
     </div>
+
   </div>
 
 </body>
