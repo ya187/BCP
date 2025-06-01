@@ -130,6 +130,12 @@
       border: none;
     }
 
+    .email-area form {
+      display: flex;
+      flex-direction: column;
+    }
+
+
     .email-submit{
       width: 100px;
     }
@@ -224,12 +230,17 @@
           gabungan kata kalimat dan masih banyak 
           lagi untuk menciptakan sebuah deskripsi
         </p>
-      <div class="flex-button-link email-area">
-        <input class="name-input email-area-item" placeholder="Nama">
-        <input class="email-input email-area-item" placeholder="Email">
-        <textarea class="email-message email-area-item" placeholder="Pesan untuk kami"></textarea>
-        <button class="button-link email-submit email-area-item">Kirim</button>
-      </div>
+        <div class="flex-button-link email-area">
+          <form
+            action="https://formspree.io/f/xkgbwalq"
+            method="POST"
+          >
+            <input type="text" name="name" class="name-input email-area-item" placeholder="Nama" required>
+            <input type="email" name="email" class="email-input email-area-item" placeholder="Email" required>
+            <textarea name="message" class="email-message email-area-item" placeholder="Pesan untuk kami" required></textarea>
+            <button type="submit" class="button-link email-submit email-area-item">Kirim</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
