@@ -11,7 +11,8 @@
       top: 0;
       left: 0;
       display: flex;
-      background-color: white;
+      background-color: #1D3557;
+      color: white;
     }
 
     .logo-bcp{
@@ -48,8 +49,8 @@
       padding: 10px 20px;
       border-radius: 25px;
       border: none;
-      background-color: black;
-      color: white;
+      background-color: white;
+      color: #1D3557;
       cursor: pointer;
     }
 /* ============================================ */
@@ -66,12 +67,15 @@
 
     .menu-item{
         width: 100%;
-        border: solid black 0.5px;
+        border: solid rgb(35, 62, 101) 0.5px;
         padding: 27px;
+        background-color: #1D3557;
+        color: white;
     }
 
     .menu-item:hover{
-        background-color: rgb(201, 201, 201);
+        background-color: rgb(35, 62, 101);
+        color: white;
     }
 
     .open-menu-button {
@@ -80,9 +84,13 @@
         border-radius: 10px;
         border: none;
         cursor: pointer;
+        background-color: #15263e;
+        color: white;
     }
 
     .close-menu-button {
+        background-color: #15263e;
+        color: white;
         display: none;
         width: 50px;
         height: 75px;
@@ -172,8 +180,7 @@
 
     div.bagian-kontak {
       height: 100vh;
-      background-color: rgb(110, 110, 110);
-      background-color: rgb(0, 0, 0);
+      background-color: #284876;
       color: white;
     }
 
