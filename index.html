@@ -10,10 +10,11 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="chatBot.css">
 </head>
 <body>
   <nav>
-    <div class="logo-bcp">BCP</div>
+    <div class="logo-bcp">EMA</div>
 
     <div class="nav-container">
       <div class="nav-item" onclick="showAbout()">About</div>
@@ -39,6 +40,24 @@
     <button class="close-menu-button" onclick="closeMenu()">✖</button>
     <button class="open-menu-button" onclick="openMenu()">☰</button>
   </nav>
+
+  <!-- Toggle Button -->
+
+  <button id="chatbot-toggle">🧑🏻‍💻</button>
+
+  <!-- Chatbox -->
+
+  <div id="chatbot-box">
+    <div id="chatbot-header">
+      EMA Bot
+      <button id="chatbot-close">✖</button>
+    </div>
+    <div id="chatbot-messages"></div>
+    <div id="chatbot-input-container">
+      <input type="text" id="chatbot-input" placeholder="Tanya sesuatu..." />
+      <button id="chatbot-send">➤</button>
+    </div>
+  </div>
 
   <div class="scroll-wrapper">
     <div class="bagian-konsultan">
@@ -302,6 +321,9 @@
   </div>
 </div>
 
+  
+  <script src="https://js.puter.com/v2/"></script>
   <script src="script.js"></script>
+  <script src="chatBot.js"></script>
 </body>
 </html>
